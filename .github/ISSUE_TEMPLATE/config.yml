@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Installation issues
+    url: https://discord.gg/CkYF9Jm8rB
+    about: Please open a ticket in our Discord for installation issues.
+  - name: General questions
+    url: https://discord.gg/CkYF9Jm8rB
+    about: Please open a ticket in our Discord for general questions.

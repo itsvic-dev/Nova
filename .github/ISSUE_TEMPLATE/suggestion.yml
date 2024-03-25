@@ -1,0 +1,32 @@
+name: Suggestion
+description: If you have any suggestions, tell us more.
+labels: ["category: suggestion", "needs triage"]
+body:
+  - type: checkboxes
+    attributes:
+      label: Is there an existing suggestion for this?
+      description: Please [search here](https://github.com/itsvic-dev/Nova/issues) to see if someone has already suggested this.
+      options:
+        - label: I have searched the existing issues before opening this suggestion.
+          required: true
+
+  - type: textarea
+    attributes:
+      label: Describe your suggestion
+      description: A clear and concise description of your suggestion.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Describe the solution you'd like
+      description: Tell us how you'd like to see this suggestion implemented. Technical implementation details aren't necessary, rather an idea of how you'd like to see this being used.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Any additional context you'd like to provide.
+    validations:
+      required: false

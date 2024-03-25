@@ -1,0 +1,59 @@
+name: Bug report
+description: Something wrong happened? Tell us more.
+labels: ["category: bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bug reports should be only used for reporting issues with Nova's behavior. For assistance with installing Nova, please use [our Discord server](https://discord.gg/CkYF9Jm8rB).
+
+  - type: dropdown
+    id: version
+    attributes:
+      label: Nova version
+      description: What version of Nova does this issue occur on?
+      options:
+        - v1.1.0
+        - v1.0.1
+        - v1.0.0
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Observed behavior
+      placeholder: What happened?
+    validations:
+      required: true
+    id: observed
+
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      placeholder: What should have happened?
+    validations:
+      required: true
+    id: expected
+
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      placeholder: What steps did you take to reproduce this issue?
+    validations:
+      required: true
+    id: reproduce
+
+  - type: textarea
+    attributes:
+      label: Additional information
+      placeholder: Any other information that might be useful
+    id: additional
+
+  - type: checkboxes
+    id: existing
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the bug you encountered.
+      options:
+        - label: I have searched the existing issues
+          required: true
