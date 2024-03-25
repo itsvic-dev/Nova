@@ -16,6 +16,7 @@ body:
         - v1.1.0
         - v1.0.1
         - v1.0.0
+      default: 0
     validations:
       required: true
 
