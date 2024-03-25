@@ -1,4 +1,4 @@
-name: Suggestion
+name: 💡 Suggestion
 description: If you have any suggestions, tell us more.
 labels: ["category: suggestion", "needs triage"]
 body:

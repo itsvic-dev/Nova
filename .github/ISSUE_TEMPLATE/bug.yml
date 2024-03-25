@@ -1,5 +1,5 @@
-name: Bug report
-description: Something wrong happened? Tell us more.
+name: 🐞 Bug report
+description: Something isn't working as expected.
 labels: ["category: bug", "needs triage"]
 body:
   - type: markdown
@@ -8,7 +8,6 @@ body:
         Bug reports should be only used for reporting issues with Nova's behavior. For assistance with installing Nova, please open a ticket in [our Discord server](https://discord.gg/CkYF9Jm8rB).
 
   - type: dropdown
-    id: version
     attributes:
       label: Nova version
       description: What version of Nova does this issue occur on?
@@ -26,7 +25,6 @@ body:
       placeholder: What happened?
     validations:
       required: true
-    id: observed
 
   - type: textarea
     attributes:
@@ -34,7 +32,6 @@ body:
       placeholder: What should have happened?
     validations:
       required: true
-    id: expected
 
   - type: textarea
     attributes:
@@ -42,19 +39,19 @@ body:
       placeholder: What steps did you take to reproduce this issue?
     validations:
       required: true
-    id: reproduce
 
   - type: textarea
     attributes:
       label: Additional information
       placeholder: Any other information that might be useful
-    id: additional
+    validations:
+      required: false
 
   - type: checkboxes
     id: existing
     attributes:
       label: Is there an existing issue for this?
-      description: Please search to see if an issue already exists for the bug you encountered.
+      description: Please [search here](https://github.com/itsvic-dev/Nova/issues) to see if an issue already exists for the bug you encountered.
       options:
         - label: I have searched the existing issues
           required: true
