@@ -12,6 +12,7 @@ body:
       label: Nova version
       description: What version of Nova does this issue occur on?
       options:
+        - v1.3.2
         - v1.3.1
         - v1.3.0
         - v1.2.0
