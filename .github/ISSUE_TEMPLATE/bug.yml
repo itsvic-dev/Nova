@@ -13,6 +13,7 @@ body:
       description: What version of Nova does this issue occur on?
       options:
         - Future version
+        - v2.0.0
         - v1.3.2
         - v1.3.1
         - v1.3.0
