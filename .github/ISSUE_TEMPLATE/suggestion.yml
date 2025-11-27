@@ -19,13 +19,6 @@ body:
 
   - type: textarea
     attributes:
-      label: Describe the solution you'd like
-      description: Tell us how you'd like to see this suggestion implemented. Technical implementation details aren't necessary, rather an idea of how you'd like to see this being used.
-    validations:
-      required: true
-
-  - type: textarea
-    attributes:
       label: Additional context
       description: Any additional context you'd like to provide.
     validations:
