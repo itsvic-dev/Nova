@@ -12,12 +12,9 @@ body:
       label: Nova version
       description: What version of Nova does this issue occur on?
       options:
-        - Future version
+        - v2.0.2
         - v2.0.1
-        - v2.0.0
-        - v1.3.2
-        - v1.3.1
-        - v1.3.0
+        - Future version
       default: 0
     validations:
       required: true
