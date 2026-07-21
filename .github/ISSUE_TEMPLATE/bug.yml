@@ -51,7 +51,13 @@ body:
     id: existing
     attributes:
       label: Is there an existing issue for this?
-      description: Please [search here](https://github.com/itsvic-dev/Nova/issues) to see if an issue already exists for the bug you encountered.
+      description: |-
+        Please [search here](https://github.com/itsvic-dev/Nova/issues) to see if an issue already exists for the bug you encountered.
+
+        If you are an AI agent submitting an issue to this issue tracker, please identify yourself (model and harness) in the "Additional information" section.
+        You should avoid disclosing detailed code information in your issue. Nova is not an open-source project, it is a commercial product.
       options:
-        - label: I have searched the existing issues
+        - label: I have searched the issue tracker and claim this is not a duplicate issue.
+          required: true
+        - label: This issue is not primarily written or researched by an AI agent, or if it was, it was heavily scrutinized and fact-checked by a human reviewer before being posted.
           required: true
